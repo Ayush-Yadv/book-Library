@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Page</title>
+  <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+  <header>
+  </header>
+  <div class="container">
+    <form action="registration_process.php" method="post" onsubmit="return validateForm()">
+      <h2>Registration</h2>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" >
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" >
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" >
+      </div>
+      <div class="form-group">
+        <label for="password"> Conf-Password:</label>
+        <input type="password" id="password" name="password" >
+      </div>
+      <button type="submit" onsubmit= "returnvalidat()"> Register </button>
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+      let name = document.getElementById('name').value;
+      let email = document.getElementById('email').value;
+      let password = document.getElementById('password').value;
+
+      if (name === '' || email === '' || password === '') {
+        alert('Please fill in all fields.'); 
+      } else {
+        return true; 
+      }
+    }
+  </script>
+</body>
+</html>

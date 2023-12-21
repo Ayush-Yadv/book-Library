@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart Page</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+  <h1  style="text-align: center;">   Cart Page </h1> <hr><hr>
+  <div class="cart-container">
+    <div class="items-section">
+      <h2>Chosen Items</h2>
+      <ul id="chosen-items-list" class="items-list"></ul>
+    </div>
+    <div class="divider"></div>
+    <div class="items-section">
+      <h2>Buy Now</h2>
+      <ul id="buy-now-items-list" class="items-list"></ul>
+      <div>
+        <p>Total Price: $<span id="total-price">0.00</span></p>
+        <button onclick="payNow()">Pay Now</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
+</body>
+</html>
