@@ -1,2 +1,2 @@
-# Book-Store
- this is a book store for college
+# book store 
+ this is simple boook store for college 
